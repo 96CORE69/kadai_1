@@ -1,0 +1,265 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>ビジュアルコンテンツデザイン_課題1</title>
+	
+<style type="text/css">
+	
+#bigbox {
+	width: 100% ;
+	height: 2100px ;
+	background-image: url("haikei.jpeg");
+}
+#title {
+    width: 100% ;
+    height: 100px;
+    background-image: url("title_1.png");
+	background-size: cover;
+    text-align: center;
+
+}
+	
+#space_1 {
+
+    font-size: medium;
+}
+	
+#group_1{
+		
+}
+
+	#group_2{
+	height: 450px;
+	}	
+	
+	#group_2_1{
+	padding-left: 30% ;
+    width: 600px ;
+    height: 600px;
+    display: flex;
+	}
+	
+	#group_2_1_1{
+	width: 300px ;
+	}
+	
+	#group_2_1_2{
+	padding-left: 100px;
+	width: 300px ;
+
+	}
+	
+		
+	#group_2_2{
+	padding-left: 30% ;
+    width: 600px ;
+    height: 600px;
+    display: flex;
+	}
+	
+	#group_2_2_1{
+	width: 75%;
+		
+	}
+	
+	#group_2_2_2{
+	width: 75%;
+	padding-left: 100px;
+	}
+	
+	#group_3{
+    padding-top: 720px;
+    text-align: left;		
+	display: flex;
+		
+	}
+	
+	#group_3_1{
+		padding-left:10%;
+	}
+	
+	#group_3_2{
+		padding-left:100px;
+	}
+	
+	#group_3_3{
+	}
+	
+	#group_3_3_1{
+		padding-left:100px;
+		padding-right: 100px;
+	}
+	
+	#group_3_3_2{
+		width: 100px ;
+		padding-left: 80% ;
+		padding-right:100px;
+		padding-top:80px;
+	}
+	
+.menu {
+	width: 100% ;
+	height: 50px;
+}
+
+/* -------------------- */
+/* ▼メニューバーの装飾 */
+/* -------------------- */
+ul.ddmenu {
+   margin: 0px;               /* メニューバー外側の余白(ゼロ) */
+   padding: 0px 0px 0px 15px; /* メニューバー内側の余白(左に15px) */
+   background-color: #cc0000; /* バーの背景色(濃い赤色) */
+}
+
+/* -------------------------- */
+/* ▼メインメニュー項目の装飾 */
+/* -------------------------- */
+ul.ddmenu li {
+   width: 125px;           /* メニュー項目の横幅(125px) */
+   display: inline-block;  /* ★1:横並びに配置する */
+   list-style-type: none;  /* ★2:リストの先頭記号を消す */
+   position: relative;     /* ★3:サブメニュー表示の基準位置にする */
+}
+ul.ddmenu a {
+   background-color: #cc0000; /* メニュー項目の背景色(濃い赤色) */
+   color: white;              /* メニュー項目の文字色(白色) */
+   line-height: 40px;         /* メニュー項目のリンクの高さ(40px) */
+   text-align: center;        /* メインメニューの文字列の配置(中央寄せ) */
+   text-decoration: none;     /* メニュー項目の装飾(下線を消す) */
+   font-weight: bold;         /* 太字にする */
+   display: block;            /* ★4:項目内全域をリンク可能にする */
+}
+ul.ddmenu a:hover {
+   background-color: #ffdddd; /* メニュー項目にマウスが載ったときの背景色(淡いピンク) */
+   color: #dd0000;            /* メニュー項目にマウスが載ったときの文字色(濃い赤色) */
+}
+
+/* -------------------- */
+/* ▼サブメニューの装飾 */
+/* -------------------- */
+ul.ddmenu ul {
+   display: none;       /* ★1:標準では非表示にする */
+   margin: 0px;         /* ★2:サブメニュー外側の余白(ゼロ) */
+   padding: 0px;        /* ★3:サブメニュー内側の余白(ゼロ) */
+   position: absolute;  /* ★4:絶対配置にする */
+}
+
+/* ---------------------------------- */
+/* ▼サブメニューがある場合に開く処理 */   /* ※サブメニューが1階層しか存在しない場合の記述 */
+/* ---------------------------------- */
+ul.ddmenu li:hover ul {
+   display: block;      /* ★5:マウスポインタが載っている項目の内部にあるリストを表示する */
+}
+
+/* ------------------------ */
+/* ▼サブメニュー項目の装飾 */
+/* ------------------------ */
+ul.ddmenu ul li {   /* ※A */
+   width: 135px;               /* サブメニュー1項目の横幅(135px) */
+   border-top: 1px solid pink; /* 項目上側の枠線(ピンク色で1pxの実線) */
+}
+ul.ddmenu ul li a {   /* ※B */
+   line-height: 35px;   /* サブメニュー1項目の高さ(35px) */
+   text-align: left;    /* 文字列の配置(左寄せ) */
+   padding-left: 5px;   /* 文字列前方の余白(5px) */
+   font-weight: normal; /* 太字にはしない */
+}
+ul.ddmenu ul li a:hover {   /* ※C */
+   background-color: #ffff80; /* サブメニュー項目にマウスが載ったときの背景色(淡い黄色) */
+   color: #005500;            /* サブメニュー項目にマウスが載ったときの文字色(濃い緑色) */
+}
+	
+
+</style>
+</head>
+
+<body>
+    <div id="bigbox">
+		<div id="title">
+			<div id="space_1">
+				<h1>Italian CIT</h1>
+			</div>
+			<div class="menu">
+			<ul class="ddmenu">
+ 			  <li><a href="Index.html">HOME</a></li>
+   			  <li><a href="#">MENU</a>
+     			<ul>
+       			  <li><a href="FOOD.html">FOOD</a></li>
+       			  <li><a href="DRINK.html">DRINK</a></li>
+    		    </ul>
+  			  </li>
+   				 <li><a href="NEWS.html">NEWS</a>
+   				 </li>
+ 				   <li><a href="ACCESS.html">QUESTION</a>
+  				   </li>
+			 </ul>	
+			</div>
+			<div id="group_1">
+				<video src="パスタ.mp4" width="1000" height="450" loop="" autoplay="" muted="" loop autoplay muted>
+				</video>
+				<h2>本場の味を忠実に再現</h2>
+			</div>
+			<div id="group_2">
+				<div id="group_2_1">
+					<div id="group_2_1_1">
+						<img src="rename/kodawari1.jpg" width="100%">
+						<h2>豊富な日替わりメニュー</h2>
+						<br>旬の美味しいお野菜、魚、お肉で美味しい料理を
+						<br>提供しております。
+						<br>毎日変わるおすすめメニューも大人気です。
+						<br>ワインと一緒にお楽しみ下さい。
+					</div>	
+					<div id="group_2_1_2">
+						<img src="rename/kodawari2.jpg" width="100%">
+						<div id="group_2_1_2_1">
+							<h2>気軽に立ち寄れるワイン酒場</h2>
+							<br>ワインに合わせたリーズナブルで美味しい
+							<br>アラカルトメニューも豊富です！！
+							<br>オーナーが美味しいと思うワインを取り揃えてます。
+							<br>お気軽にふらっとお立ち寄り下さいね
+						</div>
+					</div>	
+				</div>	
+				<div id="group_2_2">
+					<div id="group_2_2_1">
+						<img src="rename/kodawari3.jpg" width="100%">
+						<h2>美味しいパーティーコース</h2>
+							<br>お得なコースメニューは2980円から3種類ございます。
+							<br>飲み放題付きコースも人気です。女子会、お仲間とのご宴会におすすめです。
+					</div>	
+					<div id="group_2_2_2">
+						<img src="rename/kodawari4.jpg" width="100%">
+						<h2>リーズナブルな日替わりグラスワイン</h2>
+							<br>コスパ最高の美味しいワインを取り揃えております。
+							<br>日替わりグラスワインは580円〜美味しいワインを気軽にお楽しみください。
+							<br>ボトルワインも各種ご用意しております。
+					</div>	
+				</div>	
+			</div>	
+			<div id="group_3">
+				<div id="group_3_1">
+					<h2>●住所</h2>
+					<p>〒999-999　奈良氏之市都田沼１２３</p>
+					<h2>●電話番号</h2>
+					<p>0000-1234-5678</p>	
+				</div>	
+				<div id="group_3_2">
+					<h2>●営業時間</h2>
+					<br>-平日-
+					<p>10:00-23:00</p>
+					<br>-土日/祝日
+					<p>10:00-24:00</p>
+				</div>
+				<div id="group_3_3">
+					<div id="group_3_3_1">
+						<p>※８名様以上の貸切は定休日でもお気軽にお電話でご相談ください。</p>
+					</div>
+					<div id="group_3_3_2">
+						<img src="レイヤー 1.png" width="100%">
+					</div>
+				</div>
+			</div>
+	</div>	
+</body>
+</html>
